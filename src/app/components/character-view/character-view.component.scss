@@ -1,0 +1,42 @@
+@import 'variables';
+
+section{
+    background-color: $primaryColor;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    @media(min-width: $breakPointTablet){
+        flex-direction: row;
+    }
+    img{
+        width: 400px;
+        margin: 0 auto;
+    }
+    div{
+        background-color: $blackColor;
+        display: flex;
+        flex-direction: column;
+        margin: auto 0;
+        padding: 50px;
+        margin: 0 auto;
+        width: 100%;
+        @media(min-width: $breakPointTablet){
+            width: auto;
+            margin: 0 0;
+        }
+        h2{
+            font-size: $fontSize* 3;
+            font-weight: 600;
+            color: $secondaryColor;
+        }
+        ul{
+            margin-top: 40px;
+            li{
+                font-weight: 600;
+                margin: 20px 0;
+                color: $secondaryColor;
+            }
+        }
+    }
+}
+

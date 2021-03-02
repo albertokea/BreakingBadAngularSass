@@ -1,5 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
-@import './assets/partials/variables';
+@import 'reset';
+@import 'variables';
+
+*{
+    box-sizing: border-box;
+}
+
 body{
+    font-family: $fontFamily;
     background-color: $primaryColor;
+}
+
+.container{
+    max-width: $maxWidth;
+    margin: 0 auto;
+}
+
+strong{
+    font-weight: 600;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
 }

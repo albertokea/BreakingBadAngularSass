@@ -1,0 +1,63 @@
+@import 'variables';
+
+header{
+    padding: 20px;
+    background-color: $blackColor;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    @media(min-width:$breakPointTablet){
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    border-bottom: 3px solid $secondaryColor;
+    .logo{
+        margin-left: 10px;
+        padding-bottom: 10px;
+        a{
+            float: left;
+            color: $secondaryColor;
+            border: 1px solid $secondaryColor;
+            padding: 10px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+        }
+            sup{
+                font-size: 80%;
+                vertical-align: super;
+                color: $primaryColor;
+            }
+    }
+    nav{
+        ul{
+            li{
+                display: inline-block;
+                padding: 0px 5px;
+                margin: 10px;
+                a{
+                    color:$secondaryColor;
+                    text-decoration: none;
+                }
+                input{
+                    padding: 10px;
+                    border: 3px solid $secondaryColor;
+                    border-radius: 10px;
+                    margin-right: $marginGrid;
+                }
+                button{
+                    padding: 10px;
+                    background: transparent;
+                    border: 3px solid $secondaryColor;
+                    margin-left: 10px;
+                    color: $secondaryColor;
+                    border-radius: 10px;
+                    &:hover{
+                        background-color: $secondaryColor;
+                        color: $blackColor;
+                    }
+                }
+            }
+        }
+    }
+}

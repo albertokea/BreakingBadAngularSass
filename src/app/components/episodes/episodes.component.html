@@ -1,0 +1,17 @@
+<div class="arrows">
+    <button class="arrow" (click)="changeSeason(-1)">
+        < </button>
+
+            <section class="episodes container">
+                <div class="grid">
+                    <article class="episode col-12 col-t-6 col-d-4" *ngFor="let episode of episodes">
+                        <h3><strong>{{episode?.title}}</strong></h3>
+                        <p>Season: {{episode?.season}}</p>
+                        <p>{{getDate(episode?.air_date)}}</p>
+                    </article>
+                </div>
+            </section>
+
+            <button class="arrow right" (click)="changeSeason(1)">
+                > </button>
+</div>

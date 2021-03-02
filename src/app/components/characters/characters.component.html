@@ -1,0 +1,13 @@
+<div>
+    <section class="characters container">
+        <div class="grid">
+            <article class="character col-6 col-t-4 col-d-3" *ngFor="let character of characters"
+                (click)="getCharacter(character?.char_id)">
+                <figure>
+                    <img [src]="character?.img" [alt]="character?.nickname" [title]="character?.nickname">
+                </figure>
+                <h3>{{character?.name}}</h3>
+            </article>
+        </div>
+    </section>
+</div>
